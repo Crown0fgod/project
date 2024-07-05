@@ -293,7 +293,7 @@ p{
   }
 
   .list-element {
-  min-height: 70px;
+  min-height: 80px;
   border-bottom: 1px solid #ccc;
   margin-top: 5px;
 }
@@ -309,12 +309,21 @@ p{
   font-weight: 700;
   margin-bottom: 15px;
   margin-top: 15px;
+  padding-top: 5px;
 }
 
 .list-element-content span {
     font-size: 12px;
     margin-right: 4px;
   }
+
+.list-element-content{
+    padding: 5px 0 8px 0;
+}
+
+.num{
+    padding-bottom: 5px;
+}
 
 /* ----------------------------------- */
 
@@ -327,7 +336,7 @@ p{
 
 .border_list div.close_Dday .tag{
     width: 58px;
-    padding: 7px 0;
+    padding: 15px 0;
     border: 2px solid #666;
     font-size: 16px;
     text-align: center;
@@ -412,6 +421,7 @@ button {
     color: #fff;
     background: #f36200;
 }
+
 
 
 
