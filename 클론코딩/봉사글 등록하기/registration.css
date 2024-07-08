@@ -131,7 +131,7 @@ h1{
 .import{
     padding-bottom: 15px;
     text-align: right;
-    color: #d74100;
+    color: #f3521a;
     font-size: 14px;
     margin: 0;
 }
@@ -237,7 +237,7 @@ h1{
 }
 
 .board_data.type2 .group dl dt span {
-    color: #cc3002;
+    color: #f3521a;
 }
 
 
