@@ -21,8 +21,48 @@
         <div id="contents"> <!-- side바를 만들지 말지 회의중이라 왼쪽에 빈곳이 있음 -->
             <div class="content" id="content">
                 <div class="content_header">
-                    <h2 class="top_title">봉사를 등록하는 기관 이름</h2>
+                    <h2 class="top_title">봉사를 등록하는 기관 이름
+                        <button type="button" class="review_btn" id="btnList">
+                            <span>리뷰</span>
+                        </button>
+                    </h2>                 
                 </div>
+
+                  <!-- Modal -->
+                <div id="reviewModal" class="modal">
+                    <div class="modal_content">
+                        <span class="close">&times;</span>
+                        <div class="modal_header">
+                            <h2>리뷰 목록</h2>
+                        </div>
+                        <div class="modal_body">
+                            <div class="review_item">
+                                <div class="star_rating" data-rating="5">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <div class="review_text">여기 시설도 깨끗하고 담당자분도 친절해서 좋았어요!</div>
+                                <div class="review_time">작성 시간: 11시</div>
+                            </div>
+                            <div class="review_item">
+                                <div class="star_rating" data-rating="4">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <div class="review_text">저만 그런지 모르겠지만, 봉사활동중에 물을 지급해준다고 
+                                    했는데 못받았어요..</div>
+                                <div class="review_time">작성 시간: 12시</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- 등록글 제목 -->
                 <div class="content_view">
@@ -83,7 +123,7 @@
                                             <dd>00명</dd>
                                         </dl>                               
                                     </div>
-
+                                    
                                     <div class="group group_dl1"> 
                                         <dl>                     
                                             <dt class="location">주소</dt>
@@ -112,8 +152,8 @@
                                 </ul>
                             </div>
 
+                            <!-- 모집중인 자원봉사 목록 -->
                             <div id="recruiting" class="tab_content active">
-                                <!-- Recruiting Volunteer Work Content -->
                                 <div class="border_header">
                                     <div class="list_search">
                                         <p>
@@ -166,8 +206,8 @@
                                 </div>
                             </div>
                             
+                            <!-- 완료된 자원봉사 목록 -->
                             <div id="completed" class="tab_content">
-                                <!-- Completed Volunteer Work Content -->
                                 <div class="border_header">
                                     <div class="list_search">
                                         <p>
@@ -185,6 +225,13 @@
                                             <li class="list-element">
                                                 <a href="#">
                                                     <div class="list-element-left">
+                                                        <div class="tag_g">                                     
+                                                                <div class="close_Dday">
+                                                                    <div class="tag">
+                                                                        마감됨
+                                                                        <br>                                                               
+                                                                </div>
+                                                            </div>
                                                         <div class="list-element-title">[완료된 봉사] *예시 제목 1*</div>
                                                         <div class="list-element-content">
                                                           <span class="time"><b>[모집기간]</b> 2024-01-02 ~ 2024-03-02</span>
@@ -193,7 +240,7 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            <li class="list-element">
+                                            <!-- <li class="list-element">
                                                 <a href="#">
                                                     <div class="list-element-left">
                                                         <div class="list-element-title">[완료된 봉사] *예시 제목 2*</div>
@@ -214,7 +261,7 @@
                                                         </div>
                                                     </div>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                         </div>
                                     </ul>
                                 </div>
@@ -270,6 +317,30 @@
 
         // Initialize the first tab as active
         showTab('recruiting');
+
+        // 모달 열기 및 닫기
+        document.getElementById('btnList').onclick = function() {
+            document.getElementById('reviewModal').style.display = "block";
+        };
+
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('reviewModal').style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('reviewModal')) {
+                document.getElementById('reviewModal').style.display = "none";
+            }
+        };
+
+        // 별점 표시
+        document.querySelectorAll('.review_item').forEach(item => {
+            const rating = item.querySelector('.star_rating').getAttribute('data-rating');
+            const stars = item.querySelectorAll('.star');
+            for (let i = 0; i < rating; i++) {
+                stars[i].classList.add('selected');
+            }
+        });
     </script>
 </body>
 </html>

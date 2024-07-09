@@ -44,7 +44,7 @@
                             <div class="group">
                                 <dl>
                                     <dt class="name">
-                                        <label for="">
+                                        <label>
                                             <span>※</span>
                                             제목
                                         </label>
@@ -57,100 +57,123 @@
 
                             <div class="group">
                                 <dl>
-                                    <dt>
-                                        <label for="">
+                                    <dt class="AGEN_name">
+                                        <label>
                                             <span>※</span>
-                                            작성자
+                                            기관명
                                         </label>
                                     </dt>
-                                    <dd>유저 이름</dd>
+                                    <dd><input type="text" class="main_tag" placeholder="모집하는 기관 이름"></dd>
                                 </dl>
 
                                 <dl>
-                                    <dt>소속센터</dt>
-                                    <dd>유저가 속한 지역</dd>
+                                    <dt class="AGEN_name">소속기관</dt>
+                                    <dd><input type="text" class="main_tag" placeholder="기관이 소속한 지역"></dd>
                                 </dl>
                             </div>
 
                             <div class="group">
                                 <dl>
                                     <dt class="DT">
-                                        <label for="">
+                                        <label>
                                             <span>※</span>
                                             내용
                                         </label>
+                                       
                                     </dt>
                                     <dd>
                                         <div class="form_block">
                                         <div class="board_data2 type2">
                                             <div class="group">
                                                 <dl>
-                                                    <dt class="SEN">소속센터</dt>
-                                                    <dd><input type="text" class="main_tag" placeholder="기관이 소속한 지역"></dd>
+                                                    <dt class="select_detail">봉사기간</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="기간을 입력하세요"></dd>
                                                 </dl>
                                                 <dl>
-                                                    <dt class="FAC">시설유형</dt>
-                                                    <dd><input type="text" class="main_tag" placeholder="공공시설"></dd>
+                                                    <dt class="select_detail">봉사시간</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="시간을 입력하세요"></dd>
                                                 </dl>
                                             </div>
             
                                             <div class="group">
                                                 <dl>
-                                                    <dt class="TEL">전화번호</dt>
+                                                    <dt class="select_detail">봉사장소</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="장소을 입력하세요"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt class="select_detail">활동요일</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="활동 요일을 입력하세요"></dd>
+                                                </dl>
+                                            </div>
+            
+                                            <div class="group">
+                                                <dl>
+                                                    <dt class="select_detail">모집기간</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="기간을 입력하세요"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt class="select_detail">신청인원</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="00명"></dd>
+                                                </dl>
+                                            </div>
+
+                                            <div class="group">
+                                                <dl>
+                                                    <dt class="select_detail">담당자</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="담당자명"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt class="select_detail">모집인원</dt>
+                                                    <dd><input type="text" class="main_tag" placeholder="00명"></dd>
+                                                </dl>
+                                            </div>
+
+                                            <div class="group">
+                                                <dl>
+                                                    <dt class="select_detail">전화번호</dt>
                                                     <dd><input type="text" class="main_tag" placeholder="02-111-111"></dd>
                                                 </dl>
                                                 <dl>
-                                                    <dt class="FAX">팩스번호</dt>
+                                                    <dt class="select_detail">팩스번호</dt>
                                                     <dd><input type="text" class="main_tag" placeholder="02-222-222"></dd>
                                                 </dl>
                                             </div>
             
                                             <div class="group">
                                                 <dl>
-                                                    <dt class="MAN">담당자명</dt>
-                                                    <dd><input type="text" class="main_tag" placeholder="홍길동"></dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt class="MAN_TEL">담당자 연락처</dt>
-                                                    <dd><input type="text" class="main_tag" placeholder="010-1111-1111"></dd>
-                                                </dl>
-                                            </div>
-            
-                                            <div class="group">
-                                                <dl>
-                                                    <dt class="REP">대표자명</dt>
-                                                    <dd><input type="text" class="main_tag" placeholder="이순신"></dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt class="Email">이메일 주소</dt>
+                                                    <dt class="select_detail">봉사분야</dt>
                                                     <dd class="email-container">
-                                                        <input type="text" class="input-field email-input" placeholder="DOUM01"> 
-                                                        <span class="email-at">@</span>
-                                                        <input type="text" class="input-field email-input" placeholder="gmail.com">
+                                                        <input type="text" class="input-field email-input" placeholder="봉사분야">                                                    
                                                         <select class="select-field email-select margin-left">
                                                             <option value="직접입력">직접입력</option>
-                                                            <option>naver.com</option>
-                                                            <option>gmail.com</option>
-                                                            <option>daum.net</option>
-                                                            <option>yahoo.co.kr</option>
-                                                            <option>nate.com</option>
-                                                            <option>dreamwiz.com</option> 
-                                                            <option>hanmail.net</option>                                          
+                                                            <option>생활편의지원</option>
+                                                            <option>주거환경</option>                                         
+                                                        </select>                                        
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt class="select_detail">봉사자 유형</dt>
+                                                    <dd class="email-container">
+                                                        <input type="text" class="input-field email-input" placeholder="성인">                                                    
+                                                        <select class="select-field email-select margin-left">
+                                                            <option value="직접입력">직접입력</option>
+                                                            <option>성인</option>
+                                                            <option>청소년</option>                                         
                                                         </select>                                        
                                                     </dd>
                                                 </dl>
                                             </div> 
             
-                                            <div class="group group_dl1">
+                                            <!-- <div class="group group_dl1">
                                                 <dl>
-                                                    <dt class="CAP">수용인원</dt>
+                                                    <dt class="select_detail">수용인원</dt>
                                                     <dd><input type="text" class="main_tag" placeholder="00명"></dd>
                                                 </dl>                               
-                                            </div>
+                                            </div> -->
             
                                             <div class="group group_dl1"> 
                                                 <dl>                     
-                                                    <dt class="location">주소</dt>
+                                                    <dt class="select_detail">주소</dt>
                                                     <dd><input type="text" class="main_tag" placeholder="전국 8도 어딘가"></dd>
                                                 </dl>                               
                                             </div>
@@ -163,7 +186,22 @@
 
                             <div class="group">
                                 <dl>
-                                    <dt class="file_text">첨부파일</dt>
+                                    <dt class="text_area">
+                                        <label>추가정보</label>
+                                    </dt>
+                                    <dd class="dd_file">
+                                        <div class="file_t_g">                                       
+                                        </div>
+                                        <textarea></textarea>                                 
+                                    </dd>                                  
+                                </dl>
+                            </div>
+
+                            <div class="group">
+                                <dl>
+                                    <dt class="file_text">
+                                        <label>첨부파일</label>
+                                    </dt>
                                     <dd class="dd_file">
                                         <div class="file_t_g">
                                             <span>HWP, TXT, DOC, DOCX, XLS, XLSX, PPT, PPTX, JPG, JPEG, BMP, PDF 만 가능</span><br>

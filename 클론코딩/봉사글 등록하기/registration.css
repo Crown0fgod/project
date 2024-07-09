@@ -143,8 +143,12 @@ h1{
 
 .board_data.type2 .group {
     overflow: hidden;
-    border-bottom: 1px solid #e1e1e1;
-    
+    border-bottom: 1px solid #e1e1e1;  
+}
+
+.board_data2.type2 .group.group_dl1{
+    width: auto;
+    border-bottom: none;
 }
 
 .board_data{
@@ -224,10 +228,13 @@ h1{
 
 .board_data.type2 .group dl dd .form_block {
     width: 860px;
-    /* height: px; */
 }
 
 .name{
+    height: 36px;
+}
+
+.AGEN_name{
     height: 36px;
 }
 
@@ -305,14 +312,14 @@ dl .dd_file{
     align-items: center;
 }
 .email-input {
-    width: calc(30% - 12px);
+    width: calc(50% - 12px);
     height: 30px;
 }
 .email-at {
     margin: 0 5px;
 }
 .email-select {
-    width: calc(30% - 12px);
+    width: calc(50% - 12px);
     height: 34px;
 }
 .email-checkbox {
@@ -324,11 +331,21 @@ dl .dd_file{
 }
 
 
-.SEN, .FAC, .TEL, .FAX, .MAN, .MAN_TEL,
-.REP, .Email, .CAP, .location {
+.select_detail
+{
     height: 36px;
 }
 
 .DT{
-    height: 319px;
+    height: 370px;
+}
+
+.text_area{
+    height: 511px;
+}
+
+textarea{
+    width: 850px;
+    height: 500px;
+    resize: none;
 }
