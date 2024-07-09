@@ -143,6 +143,10 @@ dd {
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+}
+
 .name{
     height:34px;
 }
