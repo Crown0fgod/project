@@ -60,6 +60,10 @@ h1{
     line-height: 100%;
 }
 
+.top_title span{
+    font-size: 22px;
+}
+
 .review_btn {
     margin-left: auto;
 }
@@ -101,6 +105,8 @@ h1{
     border: 1px solid #888;
     width: 40%;
     border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 
+                0 6px 6px rgba(0,0,0,0.23);
 }
 
 .close {
