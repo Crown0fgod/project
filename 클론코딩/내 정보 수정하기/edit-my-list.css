@@ -144,8 +144,12 @@ dd {
     font-weight: bold;
 }
 
+.gen{
+    height: 28px;
+}
+
 .location{
-    height: 79px;
+    height: 27px;
     text-align: center;
 }
 
@@ -201,6 +205,9 @@ dd {
 }
 .margin-left {
     margin-left: 10px;
+}
+.margin-left1 {
+    margin-left: 0px;
 }
 .margin-top {
     width: 250px;
