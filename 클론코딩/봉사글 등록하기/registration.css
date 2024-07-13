@@ -2,7 +2,6 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    min-width: 1225px;
     min-width: 1000px;
 }
 
@@ -21,7 +20,7 @@ h1{
 }
 
 #contents{
-    width: 1100px;
+    width: 1000px;
     min-height: 1080px;
     margin: 0 auto;
 }
@@ -147,8 +146,9 @@ h1{
 }
 
 .board_data2.type2 .group.group_dl1{
-    width: auto;
+    width: 430px;
     border-bottom: none;
+    float: left;
 }
 
 .board_data{
@@ -252,13 +252,21 @@ h1{
     padding-bottom: 0;
 }
 
-.board_data.type2 .group.group_dl1 dl dd {
-    width: 80%;
+.board_data.type2 .group.group_dl1 dl dd{
+    padding-bottom: 5px;
+}
+
+.board_data.type2 .group.group_dl1 dl dd .main_tag{
+    height: 35px;
 }
 
 .board_data.type2 .group dl.file dd .file_t_g span {
     display: block;
     text-align: right;
+}
+
+.group.group_dl1 dl{
+    float: left;
 }
 
 .button-container {
@@ -333,11 +341,11 @@ dl .dd_file{
 
 .select_detail
 {
-    height: 36px;
+    height: 37px;
 }
 
 .DT{
-    height: 320px;
+    height: 324px;
 }
 
 .text_area{
